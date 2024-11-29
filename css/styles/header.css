@@ -3,7 +3,8 @@ header {
   align-items:center;
   gap:.6875rem;
 
-  margin-bottom:5.5625rem;
+  max-width:68.625rem;
+  margin:0 auto 5.5625rem;
 
   cursor:default;
 

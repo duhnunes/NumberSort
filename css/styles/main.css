@@ -2,6 +2,10 @@ main {
   display:flex;
   align-items:center;
   justify-content:space-between;
+  /* gap:6.75rem; */
+
+  max-width:68.625rem;
+  margin:0 auto;
 }
 
 .hero {
