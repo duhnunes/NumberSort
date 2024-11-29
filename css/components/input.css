@@ -24,5 +24,29 @@ input[type="number"] {
 }
 
 input[type="checkbox"] {
-  display:none;
+  all:unset;
+  position:relative;
+  
+  &:focus ~ label,
+  &:focus-visible ~ label,
+  &:active ~ label {
+
+    &::before,
+    &::after {
+      content:'';
+      position:absolute;
+      border-radius:inherit;
+    }
+    &::before {
+      inset:0;
+      background:var(--gradient-border);
+      background-clip:border-box;
+      -webkit-background-clip:border-box;
+    }
+    &::after {
+      inset:2px;
+      background:inherit;
+      z-index:0;
+    }
+  }
 }
