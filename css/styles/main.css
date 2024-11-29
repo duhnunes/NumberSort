@@ -40,7 +40,7 @@ main {
     gap:2.25rem;
   }
 
-  & .content {
+  & section.content-hero {
     display:flex;
     align-items:flex-start;
     gap:.5rem;
