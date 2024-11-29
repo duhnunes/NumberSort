@@ -30,7 +30,7 @@ O objetivo do desafio é construir uma página funcional de randomização de n�
 
 ## 🔧 Features
 - [x] Todo o CSS foi feito com <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting" target="_blank" rel="noopener noreferrer" alt="Link para a documentação sobre CSS Nesting">CSS Nesting</a>
-- [x] Mobile até 390px
+- [] Mobile até 390px
 
 
 ## ⚒️ Instalation
