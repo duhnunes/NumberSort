@@ -38,6 +38,8 @@ main {
     flex-direction:column;
     align-items:flex-start;
     gap:2.25rem;
+
+    max-width:24.125rem;
   }
 
   & section.content-hero {
@@ -76,6 +78,7 @@ main {
 
     & h2 {
       font:var(--label-lg);
+      text-transform:uppercase;
     }
   
     & p {
