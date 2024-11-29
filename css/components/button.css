@@ -28,10 +28,15 @@ button {
     opacity:1;
     animation:borderSpin 1s linear infinite;
   }
-  &:hover i,
-  &:focus-within i,
-  &:active i {
+  &:hover i.arrow-right,
+  &:focus-within i.arrow-right,
+  &:active i.arrow-right {
       animation:arrowJump 2s linear infinite;
+  }
+  &:hover i.arrow-circle,
+  &:focus-within i.arrow-circle,
+  &:active i.arrow-circle {
+      animation:arrowRolling 2s linear infinite;
   }
 
   &::before,
@@ -73,5 +78,11 @@ button {
 @keyframes arrowJump {
   50% {
     translate: 10px 0;
+  }
+}
+
+@keyframes arrowRolling {
+  to {
+    rotate: 360deg;
   }
 }

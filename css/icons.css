@@ -19,3 +19,10 @@
   width:1.5rem;
   height:1.5rem;
 }
+.arrow-circle {
+  display:inline-block;
+  background:url(../assets/icons/arrow-circle.svg) no-repeat center/cover;
+
+  width:1.5rem;
+  height:1.5rem;
+}

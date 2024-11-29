@@ -30,6 +30,9 @@ input[type="checkbox"] {
   &:focus ~ label,
   &:focus-visible ~ label,
   &:active ~ label {
+    &::before {
+      animation: borderSpin 1s linear infinite;
+    }
 
     &::before,
     &::after {
@@ -48,5 +51,11 @@ input[type="checkbox"] {
       background:inherit;
       z-index:0;
     }
+  }
+}
+
+@keyframes borderSpin {
+  to {
+    filter:hue-rotate(360deg);
   }
 }
