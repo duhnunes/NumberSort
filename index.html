@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NumberSort</title>
+  <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <header>
+    <i class="logo"></i>
+    <span>NumberSort</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <header>
+        <h2>Online - gratuito</h2>
+        <h1>Sorteador de números</h1>
+      </header>
+
+      <article class="faq">
+        <section class="content">
+          <i class="user-faq"></i>
+          <div>
+            <span>Como funciona o sorteador de números?</span>
+            <p>
+              O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.
+            </p>
+          </div>
+        </section>
+        <section class="content">
+          <i class="user-faq"></i>
+          <div>
+            <span>Posso escolher o intervalo dos números?</span>
+            <p>
+              Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.
+            </p>
+          </div>
+        </section>
+      </article>
+    </section>
+
+    <form class="content">
+      <header>
+        <h2>Quero sortear:</h2>
+        <p>
+          Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
+        </p>
+      </header>
+
+      <div class="entries">
+        <section class="numbers">
+          <label>
+            <span>Números</span>
+            <div class="bg-input">
+              <input type="number" min="1" maxlength="10" />
+            </div>
+          </label>
+          <label>
+            <span>de</span>
+            <div class="bg-input">
+              <input type="number" maxlength="9999" />
+            </div>
+          </label>
+          <label>
+            <span>de</span>
+            <div class="bg-input">
+              <input type="number" maxlength="9999" />
+            </div>
+          </label>
+        </section>
+
+        <section class="no-repeat">
+          <div class="toggle-area" >
+            <input type="checkbox" id="toggleButton" />
+            <label for="toggleButton" class="btn-bg">
+              <span class="button"></span>
+            </label>
+          </div>
+
+          <label for="toggleButton">Não repetir número</label>
+        </section>
+      </div>
+
+      <button type="submit" data-variant="primary">
+        <span>Sortear</span>
+        <i class="arrow-right"></i>
+      </button>
+    </form>
+  </main>
+</body>
+</html>

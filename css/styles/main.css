@@ -1,0 +1,165 @@
+main {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.hero {
+  max-width:31.75rem;
+
+  & header {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:.75rem;
+
+    & h2 {
+      font:var(--overline);
+      text-transform:uppercase;
+      background:var(--gradient-content);
+      background-clip:text;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    & h1 {
+      font:var(--d-lg);
+      text-transform:uppercase;
+      letter-spacing:-4px;
+    }
+  }
+
+  & .faq {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:2.25rem;
+  }
+
+  & .content {
+    display:flex;
+    align-items:flex-start;
+    gap:.5rem;
+
+    & i {
+      flex-shrink: 0;
+    }
+
+    & span {
+      font:var(--p-md);
+      color:var(--content-brand);
+    }
+
+    & p {
+      font:var(--p-sm);
+      color:var(--content-secondary);
+    }
+  }
+}
+
+.content {
+  display:flex;
+  flex-direction:column;
+  gap:2.5rem;
+
+  max-width:30.125rem;
+
+  & header {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:.125rem;
+
+    & h2 {
+      font:var(--label-lg);
+    }
+  
+    & p {
+      font:var(--p-lg);
+      color:var(--content-secondary);
+    }
+  }
+
+  & .entries {
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
+  }
+
+  & .numbers {
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+
+    & label {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:.5rem;
+
+      text-transform:uppercase;
+      font:var(--label-md);
+      color:var(--content-secondary);
+
+      & span {
+        transition:color .35s ease;
+      }
+
+      &:hover,
+      &:focus-within,
+      &:active {
+        & span {
+          color:var(--content-brand);
+        }
+      }
+    }
+  }
+
+  & .no-repeat {
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+
+    & > label {
+      font:var(--p-sm);
+    }
+  }
+
+}
+
+.bg-input {
+  position:relative;
+  border-radius:8px;
+
+  &:hover::before,
+  &:focus-within::before,
+  &:active::before {
+    background:var(--gradient-border);
+    opacity:1;
+    animation:borderSpin 1s linear infinite;
+  }
+
+  &::before,
+  &::after {
+    content:'';
+    position:absolute;
+    border-radius:inherit;
+  }
+  &::before {
+    inset:0;
+    background:transparent;
+    opacity:0;
+    filter:hue-rotate(0);
+    transition:opacity .35s ease;
+  }
+  &::after {
+    inset:1px;
+    background-color:var(--bg-secondary);
+  }
+}
+
+@keyframes borderSpin {
+  to {
+    filter:hue-rotate(360deg);
+  }
+}

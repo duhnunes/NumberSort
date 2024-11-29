@@ -1,0 +1,41 @@
+.btn-bg {
+  display:inline-block;
+  position:relative;
+
+  width:1.875rem;
+  height:1.25rem;
+
+  padding:.1875rem;
+  background:var(--content-tertiary);
+  border-radius:9999px;
+
+  cursor:pointer;
+
+  & .button {
+    position:absolute;
+    top:0;
+    left:0;
+    margin:3px;
+
+    width:.875rem;
+    height:.875rem;
+
+    background-color:var(--content-primary);
+    border-radius:9999px;
+
+    box-shadow:0 0 4px 0 rgba(0 0 0 / .6);
+
+    transition:translate .35s ease;
+  }
+}
+
+#toggleButton:checked {
+  & + .btn-bg {
+    background:var(--gradient-bg);
+
+  }
+  
+  & + .btn-bg .button {
+    translate:calc(100% - 3px) 0;
+  }
+}

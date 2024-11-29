@@ -1,0 +1,28 @@
+input[type="number"] {
+  all:unset;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    all:unset;
+    display:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    margin:0;
+  }
+  position:relative;
+
+  width:86px;
+  padding:.25rem .5rem;
+  
+  text-align:center;
+  font:var(--d-sm);
+  color:var(--content-primary);
+
+  cursor:text;
+  z-index:1;
+}
+
+input[type="checkbox"] {
+  display:none;
+}

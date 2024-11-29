@@ -1,0 +1,21 @@
+.logo {
+  display:inline-block;
+  background:url(../assets/icons/logo.svg) no-repeat center/cover;
+
+  width:2.125rem;
+  height:2.125rem;
+}
+.user-faq {
+  display:inline-block;
+  background:url(../assets/icons/user-faq.svg) no-repeat center/cover;
+
+  width:1.25rem;
+  height:1.25rem;
+}
+.arrow-right {
+  display:inline-block;
+  background:url(../assets/icons/arrow-right.svg) no-repeat center/cover;
+
+  width:1.5rem;
+  height:1.5rem;
+}
