@@ -15,6 +15,7 @@ button {
   cursor:pointer;
   overflow:hidden;
   z-index:1;
+  transition:scale .35s ease;
 
   & span,
   & i {
@@ -27,6 +28,9 @@ button {
     background:var(--gradient-border);
     opacity:1;
     animation:borderSpin 1s linear infinite;
+  }
+  &:active {
+    scale:.99;
   }
   &:hover i.arrow-right,
   &:focus-within i.arrow-right,
