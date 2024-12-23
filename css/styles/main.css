@@ -126,6 +126,7 @@ main {
     display:flex;
     align-items:center;
     gap:.5rem;
+    
 
     & > label {
       font:var(--p-sm);
@@ -144,6 +145,10 @@ main {
     background:var(--gradient-border);
     opacity:1;
     animation:borderSpin 1s linear infinite;
+  }
+
+  &:has(.error) {
+    background-color:red;
   }
 
   &::before,
