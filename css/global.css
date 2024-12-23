@@ -35,6 +35,15 @@
       #91a1fa 84.58%
     );
 
+    --gradient-danger: linear-gradient(
+      90deg,
+      #fca5a5 0%,
+      #f87171 14.84%,
+      #ef4444 32.15%,
+      #dc2626 65.79%,
+      #b91c1c 84.58%
+    );
+
     --gradient-bg: linear-gradient(
       90deg,
       #d586e0 0%,

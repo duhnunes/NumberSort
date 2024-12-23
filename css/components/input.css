@@ -28,8 +28,7 @@ input[type="checkbox"] {
   position:relative;
   
   &:focus ~ label,
-  &:focus-visible ~ label,
-  &:active ~ label {
+  &:focus-visible ~ label {
     &::before {
       animation: borderSpin 1s linear infinite;
     }
