@@ -147,8 +147,12 @@ main {
     animation:borderSpin 1s linear infinite;
   }
 
-  &:has(.error) {
-    background-color:red;
+  &:has(.error),
+  &:has(.error):hover::before,
+  &:has(.error):focus-within::before,
+  &:has(.error):active::before {
+    background:red;
+    animation:none;
   }
 
   &::before,
