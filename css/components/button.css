@@ -11,6 +11,7 @@ button {
   border-radius:8px;
 
   font:var(--label-md);
+  text-transform:uppercase;
 
   cursor:pointer;
   overflow:hidden;
@@ -71,10 +72,6 @@ button {
     background-color:var(--bg-tertiary);
     z-index:0;
   }
-}
-
-.sortAgainBtn {
-  text-transform:uppercase;
 }
 
 @keyframes borderSpin {
