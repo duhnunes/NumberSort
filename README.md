@@ -25,11 +25,15 @@
 
 
 ## 🎯 Objective
-O objetivo do desafio é construir uma página funcional de randomização de números com JavaScript. Eu resolvi implementar algumas **Features** a mais para deixar mais completo o projeto.
+O objetivo do desafio é construir uma página funcional de randomização de números com JavaScript. Mais descrições em **Features** sobre o funcionamento
 
 
 ## 🔧 Features
-- [x] Todo o CSS foi feito com <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting" target="_blank" rel="noopener noreferrer" alt="Link para a documentação sobre CSS Nesting">CSS Nesting</a>
+- [x] Number Sort
+- [ ] Animation when Sort Number
+- [x] Input animation when Hover and focus
+- [x] Input validation with JavaScript
+- [x] A técnologia de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting" target="_blank" rel="noopener noreferrer" alt="Link para a documentação sobre CSS Nesting">CSS Nesting</a> está presente nesse projeto.
 - [ ] Mobile até 390px
 
 

@@ -1,0 +1,49 @@
+.resultContainer {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  width:30.125rem;
+  height:18.375rem;
+}
+
+.resultHeader {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.25rem;
+
+  width:100%;
+
+  & h2{
+    font: var(--label-lg);
+    color:var(--content-primary);
+    text-transform:uppercase;
+  }
+
+  & p {
+    font:var(--overline);
+    color:var(--content-secondary);
+  }
+}
+
+.numbersContainer {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.25rem;
+  flex-wrap:wrap;
+
+  width:100%;
+
+  & .number {
+    padding:1.125rem 1.375rem;
+    border-radius:28px;
+    
+    font-family:var(--roboto-mono);
+    font-weight:700;
+    font-size:3rem;
+    line-height:1.5;
+    color:var(--content-brand);
+  }
+}

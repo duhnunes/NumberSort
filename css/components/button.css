@@ -73,6 +73,10 @@ button {
   }
 }
 
+.sortAgainBtn {
+  text-transform:uppercase;
+}
+
 @keyframes borderSpin {
   to {
     filter:hue-rotate(360deg)
