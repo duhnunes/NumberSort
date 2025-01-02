@@ -53,23 +53,40 @@ function handleFormSubmit(e) {
       return;
     }
 
+    if (noRepeat && number > (max - min + 1)) {
+      alert('O número de sorteios não pode ser maior que a diferença entre o mínimo e o máximo quando a opção de não repetir números está marcada.');
+      console.error('Número de sorteios maior que intervalo disponível:', { number, min, max, noRepeat });
+      return;
+    }
+
+    console.log('Parâmetros válidos para sorteio:', { number, min, max, noRepeat });
     const result = sortNumber(number, min, max, noRepeat);
     showResult(result);
   }
 }
 
 function sortNumber(number, min, max, noRepeat) {
-  const numbersSorted = new Set();
-  while (numbersSorted.size < number) {
-    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  const range = max - min + 1;
+  if (noRepeat && number > range) {
+    alert('O número de sorteios não pode ser maior que a diferença entre o mínimo e o máximo quando a opção de não repetir números está marcada.');
+    console.error('Número de sorteios maior que intervalo disponível:', { number, min, max, noRepeat });
+    return [];
+  }
+  const numbersSorted = [];
+  const numbersSet = new Set();
+  while (numbersSorted.length < number) {
+    const num = Math.floor(Math.random() * range) + min;
     if (noRepeat) {
-      numbersSorted.add(num);
+      if (!numbersSet.has(num)) {
+        numbersSet.add(num);
+        numbersSorted.push(num);
+      }
     } else {
-      numbersSorted.add(num);
-      if (numbersSorted.size >= number) break;
+      numbersSorted.push(num);
     }
   }
-  return Array.from(numbersSorted);
+  console.log('Números sorteados:', numbersSorted);
+  return numbersSorted;
 }
 
 function showResult(result) {
