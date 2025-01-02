@@ -179,3 +179,30 @@ main {
     filter:hue-rotate(360deg);
   }
 }
+
+@media (max-width: 390px) {
+  main {
+    flex-direction:column;
+  }
+
+  .hero {
+    margin-bottom:5rem;
+
+    & header {
+
+      & h1 {
+        font:var(--d-md);
+      }
+    }
+  }
+
+  .content {
+
+    & header {
+
+      & p {
+        font:var(--p-md);
+      }
+    }
+  }
+}

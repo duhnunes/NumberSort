@@ -94,3 +94,9 @@ body {
   padding-inline:7.5rem;
   padding-top:4.75rem;
 }
+
+@media (max-width: 390px) {
+  body {
+    padding:2.75rem 2.1875rem;
+  }
+}
