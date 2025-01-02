@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/build-wip-yellow?style=flat" />
+  <img src="https://img.shields.io/badge/build-complete-darkgreen?style=flat" />
   <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/license-MIT-green?style=flat" />
   </a>
