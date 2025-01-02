@@ -55,7 +55,7 @@ O objetivo do desafio é construir uma página funcional de randomização de n�
   <img src="./.github/imgs/demo.jpeg" alt="demo screenshot" />
 </p>
 
-### 390p
+### 390p (Samsung Galaxy S20)
 <p align="center">
   <img src="./.github/imgs/demo390.gif" alt="demo 390 gif" />
   <img src="./.github/imgs/demo390.jpeg" alt="demo 390 screenshot" />
